@@ -5,7 +5,6 @@
 |------|----|------|
 |name|string|null: false, unique: true|
 |email|varvhar|null: false, unique: true|
-|group_id|integer|foreign_key: true|
 |password|varchar|null: false|
 ### Association
 - has_many :groups, through: :group_users
