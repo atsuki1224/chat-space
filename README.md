@@ -3,7 +3,7 @@
 ## userテーブル
 |column|Type|Option|
 |------|----|------|
-|name|varchar|null: false, unique: true|
+|name|string|null: false, unique: true|
 |email|varvhar|null: false, unique: true|
 |group_id|integer|foreign_key: true|
 |password|varchar|null: false|
@@ -16,7 +16,7 @@
 ## groupsテーブル
 |column|Type|Option|
 |------|----|------|
-|name|varchar|null: false, unique: true|
+|name|string|null: false, unique: true|
 ### Association
 - has_many :users, through: :group_users
 - has_many :group_users
