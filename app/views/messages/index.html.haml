@@ -1,0 +1,35 @@
+.flash-box
+  .notice
+    グループを作成しました
+.wrapper
+  = render 'shared/chat-side'
+  .chat-main
+    .main-header
+      .main-header__left-box
+        .main-header__left-box__current-group
+          グループ名
+        .main-header__left-box__member-list
+          Member: eve
+      .main-header__edit-btn
+        Edit
+    .message
+      .message__upper-info__talker
+        eve
+      .message__upper-info__date
+        2019/10/10(Tru) 10:10:10
+      .message__text
+        おはようございます
+      .message__upper-info__talker
+        eve
+      .message__upper-info__date
+        2019/10/10(Tru) 20:20:20
+      .message__text
+        こんにちは
+    .form
+      %form
+        %input.form__message{placeholder: "Type a text"}
+        .form__mask
+          %label.form__mask__image
+            =fa_icon 'picture-o', class: 'icon'
+            %input.hidden{type: 'file'}
+        %input.form__submit{type: 'submit', value: 'send'}
