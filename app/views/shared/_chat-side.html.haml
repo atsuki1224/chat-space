@@ -1,0 +1,25 @@
+.chat-side
+  .side-header
+    .side-header__box
+      .side-header__box__user-name
+        eve
+      %ul.side-header__box__menu
+        %li.side-header__box__menu__new-group
+          =link_to "#" do
+            = fa_icon 'pencil-square-o', class: 'icon'
+        %li.side-header__box__menu__edit-user
+          =link_to "#" do
+            = fa_icon 'cog', class: 'icon'
+  .group
+    .group__group-name
+      グループ名
+    .group__latest-message
+      おはようございます
+    .group__group-name
+      グループ名2
+    .group__latest-message
+      こんにちは
+    .group__group-name
+      グループ名3
+    .group__latest-message
+      こんばんは
