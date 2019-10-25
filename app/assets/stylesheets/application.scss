@@ -3,11 +3,12 @@
 @import "config/colors";
 @import "modules/flash";
 @import "config/font-size";
-@import "modules/chat-side";
 @import "modules/chat-main";
+@import "modules/chat-side";
 @import "modules/user";
 @import "modules/group";
 @import "messages";
+
 *{
   box-sizing: border-box;
 }
