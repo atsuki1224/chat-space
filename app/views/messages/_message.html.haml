@@ -6,5 +6,5 @@
   .message__text
     - if message.content.present?
       %p.message__text-content
-        = %message.content
+        = message.content
     = image_tag message.image.url, class: 'message__text-image' if message.image.present?

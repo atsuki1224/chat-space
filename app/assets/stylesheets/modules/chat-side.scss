@@ -47,22 +47,23 @@
         }
       }
     }
-    .group {
+    .groups {
       height: calc(100vh - 100px);
       background-color: $side_blue_light;
-      padding: 20px 20px 0;
-      overflow: scroll;
-      &__group-name {
-        font-size: $side_group_name;
-        color: $white;
-        font-weight: bold;
-        padding-bottom: 5px;
-      }
-      &__latest-message {
-        font-size: 11px;
-        font-weight: bold;
-        padding-bottom: 40px;
-        color: $white;
+      padding: 0 20px;
+      .group {
+        &__group-name {
+          font-size: $side_group_name;
+          color: $white;
+          font-weight: bold;
+          padding-bottom: 5px;
+        }
+        &__latest-message {
+          font-size: 11px;
+          font-weight: bold;
+          padding-bottom: 40px;
+          color: $white;
+        }
       }
     }
 }
