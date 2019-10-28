@@ -39,7 +39,7 @@
     height: calc(100vh - 190px);
     padding: 46px 20px 0px 20px;
     box-sizing: border-box;
-    overflow: scroll;
+    overflow: auto;
     .message {
       display:  flex;
       &__upper-info__talker {
