@@ -54,6 +54,10 @@ $(function(){
       var html = buildHTML(data);
       $('.messages').append(html);
       $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast' );
+    })
+
+    .always(function(){
+      $('.form__submit').prop('disabled',false);
       $('#form__message')[0].reset();
     })
 
