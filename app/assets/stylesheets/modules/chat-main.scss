@@ -41,24 +41,24 @@
     box-sizing: border-box;
     overflow: auto;
     .message {
-      display:  flex;
-      &__upper-info__talker {
-        display: inline;
-        font-size: $side_header_font;
-        color: #434A54;
-        margin-bottom: 10px;
-        float: left;
-        font-weight: bold;
-      }
-      &__upper-info__date {
-        padding: 0px 0px 0px 10px;
-        display: inline;
+      &__upper-info{
         display: flex;
-        font-size: 12px;
-        color: #999999
+
+        &__talker {
+          font-size: $side_header_font;
+          color: #434A54;
+          margin-bottom: 10px;
+          font-weight: bold;
+        }
+
+        &__date {
+          padding: 0px 0px 0px 10px;
+          font-size: 12px;
+          color: #999999
+        }
       }
+
       &__text {
-        padding: 10px 20px 40px 20px;
         font-size: 14px;
         color: #434A54;
       }
