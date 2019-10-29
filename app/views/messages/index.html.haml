@@ -6,8 +6,12 @@
     .main-header
       .main-header__left-box
         .main-header__left-box__current-group
+          = @group.name
         .main-header__left-box__member-list
+          - @group.users.each do |user|
+            = user.name
       .main-header__edit-btn
+        = link_to "Edit", edit_group_path(@group),class: 'main-header__edit-btn__inside'
     .messages
       = render @messages
     .form
