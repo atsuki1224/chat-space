@@ -39,7 +39,6 @@ $(function() {
     })
       .done(function(users) {
         $("#user-search-result").empty();
-
         if (users.length !== 0) {
           users.forEach(function(user) {
             addUser(user);
@@ -54,7 +53,7 @@ $(function() {
         alert("通信エラーです。ユーザーが表示できません。");
       });
   });
-  $(document).on("click", ".chat-group-user__btn", function() {
+  $(document).on("click", ".chat-group-user__btn--add", function() {
     const userName = $(this).attr("data-user-name");
     const userId = $(this).attr("data-user-id");
     $(this)
@@ -64,9 +63,15 @@ $(function() {
     addMember(userId);
   });
   $(document).on("click", ".chat-group-user__btn--remove", function() {
+    const userName = $(this).attr("data-user-name");
+    const userId = $(this).attr("data-user-id");
     $(this)
-      .parent()
-      .remove();
+    .parent()
+    .remove();
+    addMember(userName, userId);
+    // var name = $(this).prev().text();
+    // var id = $(this).parent().attr('id');
+    // $('.chat-group-form__input').append('name, id');
   });
 });
 
