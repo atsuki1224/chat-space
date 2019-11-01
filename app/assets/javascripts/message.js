@@ -66,11 +66,11 @@ $(function(){
       .done(function(messages) {
         var insertHTML = '';
         messages.forEach(function(message){
-          if (message.id > last_message_id){
+        if (message.id > last_message_id){
             insertHTML = buildHTML(message);
             $('.messages').append(insertHTML);
+            $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast' );
         }});
-        $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast' );
       })
       .fail(function() {
         alert('自動更新に失敗しました');
